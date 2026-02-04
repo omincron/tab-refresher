@@ -8,7 +8,7 @@ function recordActivity() {
 }
 
 // Track real user activity
-["mousemove", "keydown", "scroll", "click", "touchstart"].forEach(event =>
+["keydown", "click", "touchstart"].forEach(event =>
   document.addEventListener(event, recordActivity, { passive: true, capture: true })
 );
 
