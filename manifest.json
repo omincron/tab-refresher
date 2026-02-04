@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Work Session Keeper",
+  "version": "1.1",
+  "description": "Auto-refresh page after inactivity to prevent session timeout",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://pylon176.pylonflex.gr//*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>⟳</text></svg>",
+    "48": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><text y='40' font-size='40'>⟳</text></svg>",
+    "128": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><text y='110' font-size='110'>⟳</text></svg>"
+  }
+}
