@@ -1,12 +1,15 @@
 {
   "manifest_version": 3,
   "name": "Work Session Keeper",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Auto-refresh page after inactivity to prevent session timeout",
-  "permissions": [],
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
-      "matches": ["https://pylon176.pylonflex.gr//*"],
+      "matches": ["https://pylon176.pylonflex.gr/*"],
       "js": ["content.js"],
       "run_at": "document_idle"
     }

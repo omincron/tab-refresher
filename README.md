@@ -9,7 +9,7 @@ Many web applications automatically log you out after 30 minutes of inactivity. 
 ## Features
 
 - 🔄 Auto-refreshes page after 25 minutes of inactivity
-- 👁️ Monitors real user activity (mouse, keyboard, scroll, clicks)
+- 👁️ Monitors real user activity
 - 📊 Console logging to track activity status
 - ⚡ Lightweight and efficient
 - 🎯 Targeted to specific website (easily configurable)
